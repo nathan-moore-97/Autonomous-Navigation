@@ -102,7 +102,7 @@ def main():
 
     target_speed = 10.0 / 3.6  # [m/s]
 
-    T = 100.0  # max simulation time
+    T = 200.0  # max simulation time
 
     # initial state
     state = State(x=-0.0, y=-3.0, yaw=0.0, v=0.0)
