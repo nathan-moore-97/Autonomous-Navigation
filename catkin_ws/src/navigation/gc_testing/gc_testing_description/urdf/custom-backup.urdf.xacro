@@ -34,12 +34,6 @@
   </joint>
 
   <link name="front_caster">
-    <!-- <visual>
-      <geometry>
-        <box size="0.1 0.1 0.3"/>
-      </geometry>
-      <material name="silver"/>
-    </visual> -->
     <collision>
       <geometry>
         <box size="0.1 0.1 0.3"/>
@@ -60,12 +54,6 @@
 
 
   <link name="front_caster_rod">
-    <!-- <visual>
-      <geometry>
-        <box size="0.3 0.1 0.1"/>
-      </geometry>
-      <material name="silver"/>
-    </visual> -->
     <inertial>
       <mass value="0.1"/>
       <inertia ixx="0.000167" iyy="0.00083" izz="0.00083"
@@ -82,12 +70,6 @@
 
 
   <link name="front_wheel">
-    <!-- <visual>
-      <geometry>
-        <cylinder length=".05" radius="0.14"/>
-      </geometry>
-      <material name="black"/>
-    </visual> -->
     <collision>
       <geometry>
         <cylinder length=".05" radius="0.14"/>
@@ -110,14 +92,6 @@
   
 
   <link name="right_wheel">
-    <!-- <visual>
-      <geometry>
-        <cylinder length="0.15" radius="0.14"/>
-      </geometry>
-      <material name="black">
-        <color rgba="0 0 0 1"/>
-      </material>
-    </visual> -->
     <collision>
       <geometry>
         <cylinder length="0.15" radius="0.14"/>
@@ -143,12 +117,6 @@
   </joint>
 
   <link name="left_wheel">
-   <!--  <visual>
-      <geometry>
-        <cylinder length="0.15" radius="0.14"/>
-      </geometry>
-      <material name="black"/>
-    </visual> -->
     <collision>
       <geometry>
         <cylinder length="0.15" radius="0.14"/>
@@ -174,10 +142,10 @@
   </joint>
 
 
-  <!--xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
   <VLP-16 parent="base_link" name="velodyne" topic="/velodyne_points" hz="10" samples="440">
-    <origin xyz="0 0 0.889" rpy="0 0 0" />
-  </VLP-16-->
+    <origin xyz="0 0 0.76" rpy="0 0 0" />
+  </VLP-16>
 
 
   <gazebo>
