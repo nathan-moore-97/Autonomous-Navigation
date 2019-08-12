@@ -31,7 +31,7 @@ class teleop(object):
         x = 120
         y = 121
     
-        angle_max = 60
+        angle_max = 70
         angle_step = 10
         velstr = 'Hard stop     '
         anglestr = 'Center wheels '
